@@ -183,3 +183,60 @@ footer a {
     align-self: flex-end; margin-top: auto; margin-bottom: 3vh; }
 .p04 img { 
     height: 19vh; }
+
+    /*Página de contacto*/
+
+body.oscuro {
+    background-color: #333532;
+    min-height: 100dvh;
+}
+
+body.oscuro .menu a,
+body.oscuro .flecha {
+    color: #FBFCF7;
+    text-decoration: none;
+}
+
+body.oscuro .menu a.activo {
+    border-bottom-color: #FBFCF7;
+}
+
+body.oscuro main {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 1% 1%;
+}
+
+.contacto{
+    display: flex;
+    align-items: flex-end;
+    gap: 1%;
+    margin-left: 5%;
+}
+
+.contacto img{
+    display: block;
+    height: 75vh;
+    width: auto;
+}
+
+.firma{
+    color: #FBFCF7;
+    font-weight: 600;
+}
+
+.enlaces{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enlaces a {
+    color: #FBFCF7;
+    text-decoration: none;
+}
+
+.ig { position: relative; }
+.ig span { display: none; position: absolute; left: 100%; top: 0; margin-left: 10px; font-size: 12px; }
+.ig:hover span { display: block; }
