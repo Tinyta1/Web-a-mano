@@ -32,6 +32,9 @@ header {
     align-items: center;
     gap: 120px;
     padding: 10px 1%;
+    position: relative;
+    z-index: 10;
+
 }
 
 header ul {
@@ -67,6 +70,10 @@ header ul {
     gap: 100px;
 }
 
+.menu a.activo {
+    border-bottom: 2px solid #313236;
+    padding-bottom: 1px;
+}
 
 .menu ul {
     gap: 40px;
@@ -127,23 +134,22 @@ footer a {
 
 .galeria {
     display: flex;
-    gap: 2%;
-    padding: 30 5%;
-    min-height: calc(100dvh - 60px);
+    height: calc(100dvh - 60px);
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
+
 .col-1 { flex: 0 0 28%; }
-.col-2 { flex: 0 0 22%; justify-content: flex-end; padding-bottom: 40px; }
-.col-3 { flex: 1; }
+.col-3 { flex: 0 0 39%; margin-left: 19%; }
 
 .proyecto img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 100%;
 }
 
 .num {
@@ -154,14 +160,26 @@ footer a {
     margin-bottom: 8px;
 }
 
-.col-2 p {
-    font-size: 15px;
-    color: #848484;
-}
+/* columna izquierda */
+.p01 { 
+    align-self: flex-end; margin-top: 16vh; }
+.p01 img { 
+    height: 19vh; }
 
-/* posiciones dentro de cada columna */
-.p01 { width: 60%; align-self: flex-end; margin-top: 15vh; }
-.p03 { width: 100%; margin-top: auto; margin-left: -1%; }
+.p03 { 
+    align-self: flex-end; margin-top: auto; margin-bottom: 12vh; margin-left: 3%; }
+.p03 img { 
+    height: 36vh; }
 
-.p02 { width: 70%; align-self: flex-start; }
-.p04 { width: 40%; align-self: flex-end; margin-top: auto; padding-top: 40px; }
+/* columna derecha */
+.p02 { 
+    align-self: flex-end; margin-top: 1vh; }
+.p02 img { 
+    height: 54vh; }
+.p02 .num{ 
+    margin-right:5%;}
+
+.p04 { 
+    align-self: flex-end; margin-top: auto; margin-bottom: 3vh; }
+.p04 img { 
+    height: 19vh; }
