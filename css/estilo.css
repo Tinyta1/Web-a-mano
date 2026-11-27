@@ -349,6 +349,11 @@ footer a {
 .p04 img { 
     height: 19vh; }
 
+    .proyecto a {
+    color: inherit;
+    text-decoration: none;
+}
+
     /*Página de contacto*/
 
 body.oscuro {

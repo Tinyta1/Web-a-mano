@@ -1,6 +1,6 @@
 # Portfolio personal Tina
 
-He creado con HTML, CSS y JS un prototipo que elaboré antes en Figma con mis trabajos personales como diseñadora gráfica. La intención es usarlo próximamente de manera profesional para encontrar trabajo.
+He creado con HTML, CSS y JS un prototipo que elaboré antes en Figma con mis trabajos personales como diseñadora gráfica. La intención es usarlo como portfolio de manera profesional para encontrar trabajo. Después de la entrega, probablemente se hagan cambios en la estética.
 
 ## Navegación
 
@@ -34,6 +34,8 @@ El contenido tiene elementos con mucho peso visual y gráficos, como un dibujo h
 
 Al hacer scroll se despliegan las áreas en las que he trabajado. Esta parte es bastante interactiva: a medida que se baja aparece el texto, se subraya y a la vez se despliegan a la izquierda imágenes de muestra de los trabajos.
 
+ La galería de trabajos la he hecho con dos columnas de flex (col-1 y col-3) y para separarlas uso un margin-left: 19%. Dentro de cada una coloco las imágenes con margin-top: auto y align-self: flex-end, y les doy la posición vertical con márgenes en vh. Con grid habría definido las columnas una sola vez, algo como 28% 1fr 39%, y ese hueco del medio que ahora simulo con el margen sería una columna de verdad. Cada proyecto iría directo a su celda con grid-column y grid-row.
+
 El footer es una banda negra que incluye el contacto. No aparece en el resto de secciones por decisión estética.
 
 ### Diseño gráfico (Pagina_graphic_design.html)
@@ -44,7 +46,7 @@ Aquí me costó adaptar el diseño a responsive porque no se me ocurría cómo c
 
 ### Proyectos (Pagina_proyectos.html)
 
-También tiene sus clases, el encabezado heredado y las imágenes organizadas con `display: flex`. En responsive, las imágenes pasan a bloque y se apilan una encima de otra.
+También tiene sus clases, el encabezado heredado y las imágenes organizadas con `display: flex`. En responsive, las imágenes pasan a bloque y se apilan una encima de otra. 
 
 Desde esta página empecé a usar git y mandé mis primeros commits.
 
@@ -54,7 +56,7 @@ Solo está hecha la visualización de un proyecto, el número 2, el booklet de M
 
 Contrasta con el resto por ser oscura. Tiene una foto mía y enlaces a diferentes páginas para contactar.
 
-## Componentes y estilos
+## Componentes y estilos (CSS)
 
 Todo el maquetado está hecho con flexbox en lugar de grid, para tener más libertad en la composición.
 
@@ -73,4 +75,4 @@ Las tipografías están en una carpeta `fonts`, con distintos pesos de Rauschen 
 
 ## Cambios respecto al diseño de Figma
 
-El prototipo de Figma era estático, así que el scroll interactivo de la página principal, las clases activas con JS y la adaptación responsive (el carrusel en pantallas pequeñas y las imágenes apiladas en proyectos) se han pensado o resuelto directamente en código.
+El prototipo de Figma era estático, así que el scroll interactivo de la página principal, las clases activas con JS y la adaptación responsive (el carrusel en pantallas pequeñas y las imágenes apiladas en proyectos) se han pensado o resolverán directamente en código.
