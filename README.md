@@ -5,17 +5,13 @@ He creado con HTML, CSS y JS un prototipo que elaboré antes en Figma con mis tr
 ## Navegación
 
 ```mermaid
-flowchart TD
+flowchart LR
     A([Llega a la web]) --> B[Inicio: presentación breve y proyectos destacados]
     B --> C{¿Qué quiere hacer?}
     C -->|Ver trabajos| D[Página de proyectos]
     C -->|Conocerme| H[Sobre mí]
     C -->|Contactar| I[Contacto]
-    D --> E{¿Qué diseño le interesa?}
-    E -->|Gráfico| F[Proyectos de diseño gráfico]
-    E -->|Web| G[Proyectos de diseño web]
-    F --> J[Ficha de proyecto con scroll interactivo]
-    G --> J
+    D --> J[Proyecto 2: booklet de Masayoshi Takanaka<br>Ficha con scroll interactivo]
     J --> K{¿Le ha convencido?}
     K -->|Sí| I
     K -->|Quiere ver más| D
